@@ -13,6 +13,7 @@ import slode.elsloude.cryptoapp.pojo.CoinPriceInfo
 @Suppress("DEPRECATION")
 class CoinPriceListActivity : AppCompatActivity() {
 
+
     private lateinit var viewModel: CoinViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
