@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 import slode.elsloude.cryptoapp.pojo.CoinPriceInfo
 import slode.elsloude.cryptoapp.database.AppDatabase as AppDatabase1
 
-@Database(entities = [CoinPriceInfo::class], version = 2, exportSchema = false)
+@Database(entities = [CoinPriceInfo::class], version = 3, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
     companion object {
         private var db: AppDatabase1? = null
@@ -29,8 +29,6 @@ abstract class AppDatabase : RoomDatabase() {
             }
         }
     }
-
-
 
     abstract fun coinPriceInfoDao(): CoinPriceInfoDao
 }

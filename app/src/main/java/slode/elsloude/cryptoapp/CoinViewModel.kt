@@ -45,6 +45,7 @@ class CoinViewModel(application: Application) : AndroidViewModel(application) {
             }, {
                 Log.d("TEST_OF_LOADING_DATA", "Failure: ${it.message}")
             })
+        compositeDisposable.add(disposable)
     }
 
     private fun getPriceListFromRowData(

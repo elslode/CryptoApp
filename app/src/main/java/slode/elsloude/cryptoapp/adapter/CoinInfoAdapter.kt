@@ -21,8 +21,7 @@ class CoinInfoAdapter(private val context: Context) : RecyclerView.Adapter<CoinI
     var onCoinClickListener: OnCoinClickListener? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CoinInfoViewHolder {
-        val view =
-            LayoutInflater.from(parent.context).inflate(R.layout.item_coin_info, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_coin_info, parent, false)
         return CoinInfoViewHolder(view)
     }
 
@@ -38,7 +37,7 @@ class CoinInfoAdapter(private val context: Context) : RecyclerView.Adapter<CoinI
                 Picasso.get().load(getFullImageURL()).into(holder.ivLogoCoin)
 
                 itemView.setOnClickListener{
-                    onCoinClickListener?.onCoinClick(this    )
+                    onCoinClickListener?.onCoinClick(this)
                 }
             }
         }
